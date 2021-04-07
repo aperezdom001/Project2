@@ -1,8 +1,9 @@
 import './App.css';
 import { HashRouter as Router, Route, Switch, Link } from 'react-router-dom';
-import { useStatement, useEffect } from 'react';
-import Artists from './Artists';
-import Media from './Media';
+import { useState, useEffect } from 'react';
+import Artists from './Components/Artists/Artists';
+import ArtistsLists from './Components/Artists/ArtistsList';
+import Media from './Components/Media/Media';
 import Home from './Home';
 
 // Save the Component, key and path in an array of objects for each Route
@@ -17,11 +18,20 @@ const routes = [
     key: 'Media',
     path: '/media'
   },
+
   {
     Component: Artists,
     key: 'Artists',
-    path: '/artists'
+    path: '/artists/:id'
   },
+
+  {
+    Component: ArtistsLists,
+    key:'ArtistsLists',
+    path: '/artistslist'
+
+  },
+
   {
     Component: Home,
     key: 'Home',
@@ -32,19 +42,22 @@ const routes = [
 export default function App () {
   const [artistsData, setArtistsData] = useState([]);
 
+
   const getArtistsData = async () => { 
     try{
-      const res = await fetch('https://api.artic.edu/api/v1/artworks?fields=id,title,artist_display,date_display,main_reference_number');
+      const res = await fetch('https://api.artic.edu/api/v1/artists/?fields=id,title');
     const data = await res.json();
-    console.log(data);
+    setArtistsData(data.data);
     }catch (err){
-      console.log(error);
+      console.log(err);
     }
   }
 
   useEffect(() => {
     getArtistsData();
   }, []);
+
+  
   return (
     <Router>
       <nav>
@@ -56,7 +69,11 @@ export default function App () {
             <Route
               key={key}
               path={path}
-              component={props => <Component {...props} page={key} />}
+
+              component={props => <Component 
+                data={ path === '/artistslist' ? artistsData : null}
+                
+                {...props} page={key} />}
               />))
         }
       </Switch>
