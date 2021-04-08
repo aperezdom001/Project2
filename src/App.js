@@ -2,6 +2,7 @@ import './App.css';
 import { HashRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import ArtistsLists from './Components/Artists/ArtistsList';
+import Artists from './Components/Artists/Artists';
 import Media from './Components/Media/Media';
 import Home from './Home';
 
@@ -18,6 +19,11 @@ const routes = [
     path: '/media'
   },
 
+  {
+    Component: Artists,
+    key: 'Artists',
+    path: '/artists/:id'
+  },
 
   {
     Component: ArtistsLists,
@@ -55,7 +61,15 @@ export default function App () {
   return (
     <Router>
       <nav>
-        {routes.map(route => <Link key={route.key} to={route.path}>{route.key}</Link>)}
+        {routes.map(route => 
+        {  
+          if(route.key !== 'Artists'){
+           return <Link key={route.key} to={route.path}>{route.key}</Link>
+  
+          }
+      
+        })
+          }
       </nav>
       <Switch>
         {

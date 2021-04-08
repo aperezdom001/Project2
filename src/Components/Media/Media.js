@@ -5,9 +5,9 @@ export default function Media (props) {
 
     const getMediaInfo = async () => {
         try {
-            const res = await fetch(`https://api.artic.edu/api/v1/articles${props.match.params.id}`);
+            const res = await fetch(`https://api.artic.edu/api/v1/articles`);
             const data = await res.json();
-            setMediaInfor(data);
+            setMediaInfo(data);
         }catch (err){
             console.log(err);
         }
@@ -22,7 +22,6 @@ export default function Media (props) {
     return(
         <div>
             <h1>DailyArt Media</h1>
-            <h2>{props.data.match.params.title}</h2>
         </div>
     )
 }
