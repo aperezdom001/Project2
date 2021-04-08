@@ -1,7 +1,6 @@
 import './App.css';
 import { HashRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import Artists from './Components/Artists/Artists';
 import ArtistsLists from './Components/Artists/ArtistsList';
 import Media from './Components/Media/Media';
 import Home from './Home';
@@ -19,11 +18,6 @@ const routes = [
     path: '/media'
   },
 
-  {
-    Component: Artists,
-    key: 'Artists',
-    path: '/artists/:id'
-  },
 
   {
     Component: ArtistsLists,
@@ -72,7 +66,6 @@ export default function App () {
 
               component={props => <Component 
                 data={ path === '/artistslist' ? artistsData : null}
-                
                 {...props} page={key} />}
               />))
         }
