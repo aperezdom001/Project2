@@ -28,7 +28,7 @@ const routes = [
 
   {
     Component: ArtistsLists,
-    key:'ArtistsLists',
+    key:'Artists Lists',
     path: '/artistslist'
 
   },
@@ -62,7 +62,7 @@ export default function App () {
   return (
     <Router>
       <nav>
-       <h1 className='website-title'>DailyArt</h1>
+       <h1 className='website-title'>StArt</h1>
         {routes.map(route => 
         {  
           if(route.key !== 'Artists'){

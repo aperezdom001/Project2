@@ -1,3 +1,5 @@
+
+
 .artist-list-heading{
    display: flex;
    justify-content: center;
@@ -11,6 +13,8 @@
       flex-direction: column;
       align-items: center;
       font-family: 'Franklin Gothic Medium';
-      border: 1px solid #674D80 ;
+      border: 2px  solid #DCCEFF ;
       /* outline: 2px dashed #674D80 ; */
   }
+
+  
