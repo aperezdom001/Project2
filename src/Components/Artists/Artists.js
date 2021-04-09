@@ -1,5 +1,6 @@
 import { useState, useEffect} from 'react';
 
+
 export default function Artists(props) {
     const [artistInfo, setArtistInfo] = useState({});
 

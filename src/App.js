@@ -6,6 +6,7 @@ import Artists from './Components/Artists/Artists';
 import Media from './Components/Media/Media';
 import Home from './Home';
 
+
 // Save the Component, key and path in an array of objects for each Route
 // You could write all routes by hand but I'm lazy annd this lets me use
 // the map method to just loop over them and make my routes
@@ -61,6 +62,7 @@ export default function App () {
   return (
     <Router>
       <nav>
+       <h1 className='website-title'>DailyArt</h1>
         {routes.map(route => 
         {  
           if(route.key !== 'Artists'){
