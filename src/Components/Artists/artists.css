@@ -17,4 +17,10 @@
       /* outline: 2px dashed #674D80 ; */
   }
 
+  .more-info{
+      color:#898092;
+      font-family: 'Franklin Gothic Medium';
+      display: flex;
+      justify-content:center;
+  }
   

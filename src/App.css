@@ -5,6 +5,7 @@ nav{
   align-items: center;
   background-color: #DCCEFF;
   font-family:'Franklin Gothic Medium';
+  font-weight: bolder;
   padding: 0 20px;
   height: 40px;
   width: auto;
@@ -13,5 +14,19 @@ nav{
 .website-title {
   display: flex;
  color: #674D80 ;
+}
+
+footer{
+  display: flex;
+  justify-content:center;;
+  align-items:center;
+  background-color: #DCCEFF;
+  font-family: 'Franklin Gothic Medium';
+  color:  #674D80;
+  font-weight: bolder;
+}
+
+body{
+  background-color:#F6EEFF;
 }
 

@@ -1,6 +1,6 @@
+import './media.css';
+import {useState, useEffect} from 'react';
 
-import {useState, useEffect} from 'react'
-;
 export default function Media (props) {
     const [mediaInfo, setMediaInfo] = useState({});
 
@@ -22,7 +22,7 @@ export default function Media (props) {
 
     return(
         <div>
-            <h1>DailyArt Media</h1>
+            <h1 className='media-title'>~ StArt Media ~</h1>
         </div>
     )
 }

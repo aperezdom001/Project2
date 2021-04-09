@@ -11,6 +11,8 @@ export default function MediaList(props){
                         <Link to={`/media/${article.id}`}>{article.title}</Link>
                     )
                 })}
+
+            
             </div>
         </div>
     )

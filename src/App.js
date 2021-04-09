@@ -73,6 +73,7 @@ export default function App () {
         })
           }
       </nav>
+    
       <Switch>
         {
           routes.map(({key, Component, path}) => (
@@ -86,6 +87,12 @@ export default function App () {
               />))
         }
       </Switch>
+      <footer>
+          @AidePerez with SEIR-Erica 2021
+          <br></br>
+          Credits to: Art Institute of Chicago
+        </footer>
     </Router>
+    
   )
 }

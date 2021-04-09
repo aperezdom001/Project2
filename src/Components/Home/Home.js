@@ -9,7 +9,7 @@ export default function Home (props){
  
     return(
         <div>
-            <h1>StArt Home</h1>
+            <h1>~ StArt Home ~</h1>
             <h3>
                 Explore the history of art, learn more about
                 artists, and observe new art techniques and concepts.
@@ -41,7 +41,7 @@ export default function Home (props){
                              {/* {Math.random({artist.typeOfArt}) * artistOfDay.length} */}
                         </h4>
                         <h4>
-                            {artist.artwork}\ 
+                            {artist.artwork}
                             {/* insert random generator code here */}
                              {/* {Math.random({artist.artwork}) * artistOfDay.length} */}
                             

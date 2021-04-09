@@ -19,6 +19,7 @@ export default function Artists(props) {
     }, []); 
     console.log(artistInfo);
     return(
-        <h1>This is the Artists Component</h1>
+        <h1 className='more-info'>More Information:</h1>
+       
     )
 }
