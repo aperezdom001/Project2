@@ -6,6 +6,12 @@ export default function Home (props){
   console.log(artistOfDay);
   console.log(artPrompts);
   console.log(funFacts);
+
+  const randomIdx = Math.floor(Math.random()* artistOfDay.length-1);
+  console.log(artistOfDay[randomIdx]);
+
+  const randomFactIdx = Math.floor(Math.random() * funFacts.length-1);
+  
  
     return(
         <div>
@@ -27,29 +33,36 @@ export default function Home (props){
                 art prompt!
             </h3>
 
-            {artistOfDay.map((artist, i) => {
-                return(
-                    <div className='artistOfDayDisplay' key={i}>
+            
+             {artistOfDay[randomIdx] !== undefined && 
+             
+                    <div className='artistOfDayDisplay'>
                         <h4>
-                            {artist.nameDate}
+                            {artistOfDay[randomIdx].nameDate}
                             {/* insert random generator code here */}
                              {/* {Math.random({artist.name}) * artistOfDay.length} */}
                         </h4>
                         <h4>
-                            {artist.typeofArt}
+                            {artistOfDay[randomIdx].typeofArt}
                              {/* insert random generator code here */}
                              {/* {Math.random({artist.typeOfArt}) * artistOfDay.length} */}
                         </h4>
                         <h4>
-                            {artist.artwork}
+                            {artistOfDay[randomIdx].artwork}
                             {/* insert random generator code here */}
                              {/* {Math.random({artist.artwork}) * artistOfDay.length} */}
                             
                         </h4>
                     </div>  
+                        }
 
-                )
-            })}
+                    <div>
+                       
+                       <h4>Fun fact: {funFacts[randomFactIdx] !== undefined && funFacts[randomFactIdx].fact}</h4>
+
+                        
+
+                        </div>
 
             </div>
            

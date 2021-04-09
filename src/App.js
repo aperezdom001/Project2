@@ -4,7 +4,8 @@ import { useState, useEffect } from 'react';
 import ArtistsLists from './Components/Artists/ArtistsList';
 import Artists from './Components/Artists/Artists';
 import Media from './Components/Media/Media';
-import Home from './Home';
+import MediaDetail from './Components/Media/MediaDetail';
+import Home from './Components/Home/Home';
 
 
 // Save the Component, key and path in an array of objects for each Route
@@ -18,6 +19,12 @@ const routes = [
     Component: Media,
     key: 'Media',
     path: '/media'
+  },
+
+  {
+    Component: MediaDetail,
+    key: 'Media Detail',
+    path: '/media/:id'
   },
 
   {
@@ -79,7 +86,7 @@ export default function App () {
           routes.map(({key, Component, path}) => (
             <Route
               key={key}
-              path={path}
+              exact path={path}
 
               component={props => <Component 
                 data={ path === '/artistslist' ? artistsData : null}
