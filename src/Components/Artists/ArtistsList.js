@@ -1,6 +1,5 @@
 import './artists.css';
 import {Link} from 'react-router-dom';
-import { useState, useEffect} from 'react';
 
 
 export default function ArtistsLists (props) {
@@ -13,7 +12,7 @@ export default function ArtistsLists (props) {
                 <h3 className='artist-list-display'>
                 {props.data.map((artist, i) => {
                     return (
-                        <Link key={i} to={`/artists/${artist.id}`}> {artist.title}</Link>
+                        <Link m to={`/artists/${artist.id}`}> {artist.title}</Link>
                         
                     )
                 })}

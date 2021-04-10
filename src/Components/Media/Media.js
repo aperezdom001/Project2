@@ -24,12 +24,14 @@ export default function Media (props) {
     return(
         <div>
             <h1 className='media-title'>~ StArt Media ~</h1>
+            <h2 className='article-list-display'>
             {mediaInfo.data && mediaInfo.data.map((article, i) => {
                     return (
-                        <Link to={`/media/${article.id}`}> {article.title}</Link>
+                        <Link key={i} to={`/media/${article.id}`}> {article.title}</Link>
                         
                     )
                 })}
+                </h2>
         </div>
     )
 }

@@ -35,7 +35,7 @@ const routes = [
 
   {
     Component: ArtistsLists,
-    key:'Artists Lists',
+    key:'Artists List',
     path: '/artistslist'
 
   },

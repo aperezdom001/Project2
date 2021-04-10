@@ -21,16 +21,13 @@ export default function Artists(props) {
     return(
         <div>
              <h1 className='more-info'>More Information:</h1>
-             {/* <h2>{props.data.artist.title}</h2> */}
              {artistInfo.data && 
                 <div>
-                        <h2>
-                            {artistInfo.data.title}
-                        </h2>
-
-                        <h2>
-                            {artistInfo.data.birth_date}
-                        </h2>
+                        <h2>{artistInfo.data.title}</h2>
+                        <h2>{artistInfo.data.birth_date} - {artistInfo.data.death_date}</h2>
+                        {/* <h3>{artistInfo.data.artwork_ids}</h3> */}
+                        <p>{artistInfo.data.description}</p>
+                    
                 </div>
              }
         </div>
