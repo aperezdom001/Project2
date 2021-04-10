@@ -10,6 +10,7 @@
     justify-content: center;
     color: #898092;
     font-family: 'Franklin Gothic Medium';
+  
 }
 
 .artist-day-title,
@@ -22,7 +23,7 @@
     font-weight: bolder;
 }
 .artist-of-day,
-.artist-of-day-art,
+.artist-of-day-type,
 .artist-of-day-artwork{
     display: flex;
     justify-content: center;

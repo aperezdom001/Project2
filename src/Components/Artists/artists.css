@@ -21,6 +21,16 @@
       color:#898092;
       font-family: 'Franklin Gothic Medium';
       display: flex;
-      justify-content:center;
+      justify-content:center;   
+  }
+
+  .artist-data-title,
+  .artist-data-description{
+    color:#898092;
+    font-family: 'Franklin Gothic Medium';
+    display: flex;
+    justify-content:center;
+    border: 2px  solid #DCCEFF ;
+   
   }
   

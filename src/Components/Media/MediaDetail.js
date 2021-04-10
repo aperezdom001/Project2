@@ -1,31 +1,34 @@
 import { useState, useEffect} from 'react';
 
-export default function MediaDetail(props){
-    const [articleInfo, setArticleInfo] = useState({});
+export default function Media (props) {
+    const [mediaInfo, setMediaInfo] = useState({});
 
-    const getArticleInfo = async () => {
-        try{
-            const res = await fetch('https://api.artic.edu/api/v1/articles');
+    const getMediaInfo = async () => {
+        try {
+            const res = await fetch(`https://api.artic.edu/api/v1/articles`);
             const data = await res.json();
-            setArticleInfo(data);
-        }catch(err){
+            setMediaInfo(data);
+        }catch (err){
             console.log(err);
         }
     }
 
-    useEffect(() => {
-        getArticleInfo();
+    useEffect( () => {
+        getMediaInfo();
     }, []);
-    console.log(articleInfo);
+
+    console.log(mediaInfo);
 
     return(
         <div>
 
             <h1>Article Details</h1>
            
-            {articleInfo.data &&
+            {mediaInfo.data &&
                 <div>
-                    <h2>{articleInfo.data.title}</h2>
+                    <h2>{mediaInfo.data.title}</h2>
+                    <h3>{mediaInfo.data.date}</h3>
+                    <p>{mediaInfo.data.copy}</p>
                 </div>
             }
 

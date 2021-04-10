@@ -19,22 +19,23 @@ export default function Home (props){
     return(
         <div>
             <h1 className="home-page-title">~ StArt Home ~</h1>
-            <h3 className='greeting-intro'>
+            <p className='greeting-intro'>
                 Explore the history of art, learn more about
                 artists, and observe new art techniques and concepts.
-            </h3>
+               
+            </p>
                 
-            <h3 className='greeting-intro'>
+            <p className='greeting-intro'>
                 Improve your creative side and learn how you can 
                 use that to your advantage in your daily life.
-            </h3>
+            </p>
 
             <div>
-            <h3 className='greeting-intro'>
+            <p className='greeting-intro'>
                 Here in ARTDaily, learn some interesting fun facts
                 and check out the Artist of the Day along with an
                 art prompt!
-            </h3>
+            </p>
 
             
              {artistOfDay[randomIdx] !== undefined && 
@@ -46,7 +47,7 @@ export default function Home (props){
                             {/* insert random generator code here */}
                              {/* {Math.random({artist.name}) * artistOfDay.length} */}
                         </h4>
-                        <h5 classname='artist-of-day-art'>
+                        <h5 classname='artist-of-day-type'>
                             {artistOfDay[randomIdx].typeofArt}
                              {/* insert random generator code here */}
                              {/* {Math.random({artist.typeOfArt}) * artistOfDay.length} */}
