@@ -19,6 +19,9 @@ export default function Home (props){
     return(
         <div>
             <h1 className="home-page-title">~ StArt Home ~</h1>
+        
+
+            <div className='border-wrap-home'>
             <p className='greeting-intro'>
                 Explore the history of art, learn more about
                 artists, and observe new art techniques and concepts.
@@ -29,8 +32,6 @@ export default function Home (props){
                 Improve your creative side and learn how you can 
                 use that to your advantage in your daily life.
             </p>
-
-            <div>
             <p className='greeting-intro'>
                 Here in ARTDaily, learn some interesting fun facts
                 and check out the Artist of the Day along with an

@@ -25,12 +25,19 @@
   }
 
   .artist-data-title,
-  .artist-data-description{
+   .artist-data-description{
     color:#898092;
     font-family: 'Franklin Gothic Medium';
     display: flex;
     justify-content:center;
-    border: 2px  solid #DCCEFF ;
    
+}
+  .artist-data-description{
+    display: flex;
+    justify-content: center;
+    color: #898092;
+    font-family: 'Franklin Gothic Medium';
+    font-weight:bold;
+
   }
   
