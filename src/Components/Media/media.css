@@ -14,3 +14,13 @@
     font-family: 'Franklin Gothic Medium';
     border: 2px  solid #DCCEFF ;
 }
+
+h1{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium';
+    color: #898092;
+   
+}

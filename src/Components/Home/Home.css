@@ -44,3 +44,8 @@
     color: #898092;
     font-family: 'Franklin Gothic Medium';
 }
+
+.greeting-intro
+{
+    border: 2px  solid #DCCEFF ;
+}
