@@ -1,6 +1,7 @@
 import artistOfDay from './artistOfDay.json';
 import artPrompts from './artPrompts.json';
 import funFacts from './funFacts.json';
+import './Home.css';
 
 export default function Home (props){
   console.log(artistOfDay);
@@ -38,35 +39,37 @@ export default function Home (props){
             
              {artistOfDay[randomIdx] !== undefined && 
              
-                    <div className='artistOfDayDisplay'>
-                        <h4>
+                    <div>
+                        <h2 className='artist-day-title'>~ Artist of the Day ~</h2>
+                        <h4 className='artist-of-day'>
                             {artistOfDay[randomIdx].nameDate}
                             {/* insert random generator code here */}
                              {/* {Math.random({artist.name}) * artistOfDay.length} */}
                         </h4>
-                        <h4>
+                        <h5 classname='artist-of-day-art'>
                             {artistOfDay[randomIdx].typeofArt}
                              {/* insert random generator code here */}
                              {/* {Math.random({artist.typeOfArt}) * artistOfDay.length} */}
-                        </h4>
-                        <h4>
+                        </h5>
+                        <h5 className='artist-of-day-artwork'>
                             {artistOfDay[randomIdx].artwork}
                             {/* insert random generator code here */}
                              {/* {Math.random({artist.artwork}) * artistOfDay.length} */}
                             
-                        </h4>
+                        </h5>
                     </div>  
                         }
 
                     <div>
                        
-                       <h4>Fun fact: {funFacts[randomFactIdx] !== undefined && funFacts[randomFactIdx].fact}</h4>
+                       <h2 className='fun-fact-title'>~ Fun Fact ~</h2>
+                       <h3 className='fun-facts'> {funFacts[randomFactIdx] !== undefined && funFacts[randomFactIdx].fact}</h3>
 
                         </div>
 
                     <div>
-                        <h4>Prompt of the Day:</h4>
-                        <h5>{artPrompts[randomPromptIdx] !== undefined && artPrompts[randomPromptIdx].prompt}</h5>
+                        <h2 className='art-prompt-title'>~ Prompt of the Day ~</h2>
+                        <h3 className='art-prompt'>{artPrompts[randomPromptIdx] !== undefined && artPrompts[randomPromptIdx].prompt}</h3>
 
                     </div>
 

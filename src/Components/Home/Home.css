@@ -1,0 +1,45 @@
+.home-page-title{
+    display: flex;
+    justify-content: center;
+    color: #898092;
+    font-family: 'Franklin Gothic Medium';
+}
+
+.greeting-intro{
+    display: flex;
+    justify-content: center;
+    color: #898092;
+    font-family: 'Franklin Gothic Medium';
+}
+
+.artist-day-title,
+.fun-fact-title,
+.art-prompt-title{
+    display: flex;
+    justify-content: center;
+    color: #898092;
+    font-family: 'Franklin Gothic Medium';
+    font-weight: bolder;
+}
+.artist-of-day,
+.artist-of-day-art,
+.artist-of-day-artwork{
+    display: flex;
+    justify-content: center;
+    color: #898092;
+    font-family: 'Franklin Gothic Medium';
+}
+
+.fun-facts{
+    display: flex;
+    justify-content: center;
+    color: #898092;
+    font-family: 'Franklin Gothic Medium';
+}
+
+.art-prompt{
+    display: flex;
+    justify-content: center;
+    color: #898092;
+    font-family: 'Franklin Gothic Medium';
+}
