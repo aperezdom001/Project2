@@ -2,7 +2,7 @@
     display:flex;
     justify-content: center;
     color: #898092;
-    font-family: 'Franklin Gothic Medium';
+    font-family: 'Franklin Gothic Medium', cursive;
     ;
 }
 
@@ -11,8 +11,8 @@
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
-    font-family: 'Franklin Gothic Medium';
-    border: 2px  solid #DCCEFF ;
+    font-family: 'Franklin Gothic Medium', cursive;
+    /* border: 2px  solid #DCCEFF ; */
 }
 
 h1{
@@ -20,7 +20,21 @@ h1{
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
-    font-family: 'Franklin Gothic Medium';
+    font-family: 'Franklin Gothic Medium', cursive;
     color: #898092;
    
 }
+
+
+@media only screen and (min-width: 768px) {
+    aside {
+       width: 30%;
+       height: 100%;
+     }
+ }
+/* 
+ @media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  } */

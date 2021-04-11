@@ -2,14 +2,14 @@
     display: flex;
     justify-content: center;
     color: #898092;
-    font-family: 'Franklin Gothic Medium';
+    font-family: 'Franklin Gothic Medium', cursive;
 }
 
 .greeting-intro{
     display: flex;
     justify-content: center;
     color: #898092;
-    font-family: 'Franklin Gothic Medium';
+    font-family: 'Franklin Gothic Medium', cursive;
   
 }
 
@@ -19,7 +19,7 @@
     display: flex;
     justify-content: center;
     color: #898092;
-    font-family: 'Franklin Gothic Medium';
+    font-family: 'Franklin Gothic Medium', cursive;
     font-weight: bolder;
 }
 .artist-of-day,
@@ -28,23 +28,31 @@
     display: flex;
     justify-content: center;
     color: #898092;
-    font-family: 'Franklin Gothic Medium';
+    font-family: 'Franklin Gothic Medium', cursive;
 }
 
 .fun-facts{
     display: flex;
     justify-content: center;
     color: #898092;
-    font-family: 'Franklin Gothic Medium';
+    font-family: 'Franklin Gothic Medium', cursive;
 }
 
 .art-prompt{
     display: flex;
     justify-content: center;
     color: #898092;
-    font-family: 'Franklin Gothic Medium';
+    font-family: 'Franklin Gothic Medium', cursive;
 }
 
-.border-wrap-home{
+/* .border-wrap-home{
     border: 2px  solid #DCCEFF ;
-}
+} */
+
+
+@media only screen and (min-width: 768px) {
+    aside {
+       width: 30%;
+       height: 100%;
+     }
+ }

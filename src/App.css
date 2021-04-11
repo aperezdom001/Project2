@@ -1,10 +1,13 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mansalva&display=swap');
+
 nav{
   display: flex;
   justify-content: space-around;
   flex-direction: row-reverse;
   align-items: center;
   background-color: #DCCEFF;
-  font-family:'Franklin Gothic Medium';
+  font-family:'Franklin Gothic Medium', cursive;
   font-weight: bolder;
   padding: 0 20px;
   height: 40px;
@@ -21,7 +24,7 @@ footer{
   justify-content:center;;
   align-items:center;
   background-color: #DCCEFF;
-  font-family: 'Franklin Gothic Medium';
+  font-family: 'Franklin Gothic Medium', cursive;
   color:  #674D80;
   font-weight: bolder;
 }

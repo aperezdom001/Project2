@@ -72,7 +72,7 @@ export default function App () {
        <h1 className='website-title'>StArt</h1>
         {routes.map(route => 
         {  
-          if(route.key !== 'Artists'){
+          if(route.key !== 'Artists' && route.key !== 'Media Detail'){
            return <Link key={route.key} to={route.path}>{route.key}</Link>
   
           }
@@ -82,17 +82,17 @@ export default function App () {
       </nav>
     
       <Switch>
-        {
-          routes.map(({key, Component, path}) => (
-            <Route
-              key={key}
-              exact path={path}
 
-              component={props => <Component 
-                data={ path === '/artistslist' ? artistsData : null}
-                {...props} page={key} />}
-              />))
+        {artistsData.length > 0 && routes.map(({key, Component, path}) => (
+           <Route
+           key={key}
+           exact path={path}
+           component={props => <Component 
+             data={ path === '/artistslist' ? artistsData : null}
+             {...props} page={key} />}
+           />))
         }
+        
       </Switch>
       <footer>
           @AidePerez with SEIR-Erica 2021

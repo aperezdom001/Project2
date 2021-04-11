@@ -45,19 +45,12 @@ export default function Home (props){
                         <h2 className='artist-day-title'>~ Artist of the Day ~</h2>
                         <h4 className='artist-of-day'>
                             {artistOfDay[randomIdx].nameDate}
-                            {/* insert random generator code here */}
-                             {/* {Math.random({artist.name}) * artistOfDay.length} */}
                         </h4>
                         <h5 classname='artist-of-day-type'>
                             {artistOfDay[randomIdx].typeofArt}
-                             {/* insert random generator code here */}
-                             {/* {Math.random({artist.typeOfArt}) * artistOfDay.length} */}
                         </h5>
                         <h5 className='artist-of-day-artwork'>
                             {artistOfDay[randomIdx].artwork}
-                            {/* insert random generator code here */}
-                             {/* {Math.random({artist.artwork}) * artistOfDay.length} */}
-                            
                         </h5>
                     </div>  
                         }

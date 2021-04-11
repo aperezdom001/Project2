@@ -4,7 +4,7 @@
    display: flex;
    justify-content: center;
    color: #898092;
-   font-family: 'Franklin Gothic Medium';
+   font-family: 'Franklin Gothic Medium', cursive;
   }
 
   .artist-list-display{
@@ -12,14 +12,14 @@
       justify-content: space-around;
       flex-direction: column;
       align-items: center;
-      font-family: 'Franklin Gothic Medium';
-      border: 2px  solid #DCCEFF ;
+      font-family: 'Franklin Gothic Medium', cursive;
+      /* border: 2px  solid #DCCEFF ; */
       /* outline: 2px dashed #674D80 ; */
   }
 
   .more-info{
       color:#898092;
-      font-family: 'Franklin Gothic Medium';
+      font-family: 'Franklin Gothic Medium', cursive;
       display: flex;
       justify-content:center;   
   }
@@ -27,7 +27,7 @@
   .artist-data-title,
    .artist-data-description{
     color:#898092;
-    font-family: 'Franklin Gothic Medium';
+    font-family: 'Franklin Gothic Medium', cursive;
     display: flex;
     justify-content:center;
    
@@ -37,7 +37,14 @@
     justify-content: center;
     color: #898092;
     font-family: 'Franklin Gothic Medium';
-    font-weight:bold;
+    font-weight:lighter;
 
   }
   
+
+  @media only screen and (min-width: 768px) {
+    aside {
+       width: 30%;
+       height: 100%;
+     }
+ }
