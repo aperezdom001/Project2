@@ -17,7 +17,6 @@ export default function Media (props) {
         getMediaInfo();
     }, []);
 
-    console.log(mediaInfo);
 
     return(
         <div>

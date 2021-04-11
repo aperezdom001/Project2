@@ -14,16 +14,36 @@
   
 }
 
-.artist-day-title,
-.fun-fact-title,
-.art-prompt-title{
+.list-start{
     display: flex;
     justify-content: center;
     color: #898092;
     font-family: 'Franklin Gothic Medium', cursive;
-    font-weight: bolder;
+    font-size: x-large;
+
 }
-.artist-of-day,
+
+.home-art-fun-prompt-flex-container{
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: red;
+}
+.home-art-fun-prompt-flex-container > .art-fun-prompt{
+    background-color: yellow;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: medium;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #898092;
+    font-family: 'Franklin Gothic Medium', cursive;
+    font-weight: bolder; */
+
+}
+/* .artist-of-day,
 .artist-of-day-type,
 .artist-of-day-artwork{
     display: flex;
@@ -44,7 +64,7 @@
     justify-content: center;
     color: #898092;
     font-family: 'Franklin Gothic Medium', cursive;
-}
+} */
 
 /* .border-wrap-home{
     border: 2px  solid #DCCEFF ;
