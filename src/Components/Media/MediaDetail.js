@@ -22,7 +22,7 @@ export default function Media (props) {
     return(
         <div>
 
-            <h1>~ Article Details ~</h1>s
+            <h1>~ Article Details ~</h1>
            
             {mediaInfo.data &&
                 <div>

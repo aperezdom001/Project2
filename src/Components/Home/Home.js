@@ -46,7 +46,7 @@ export default function Home (props){
                         <h4 className='artist-of-day'>
                             {artistOfDay[randomIdx].nameDate}
                         </h4>
-                        <h5 classname='artist-of-day-type'>
+                        <h5 className='artist-of-day-type'>
                             {artistOfDay[randomIdx].typeofArt}
                         </h5>
                         <h5 className='artist-of-day-artwork'>

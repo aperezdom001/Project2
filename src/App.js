@@ -7,9 +7,9 @@ import Media from './Components/Media/Media';
 import MediaDetail from './Components/Media/MediaDetail';
 import Home from './Components/Home/Home';
 
-
+//Explanation:
 // Save the Component, key and path in an array of objects for each Route
-// You could write all routes by hand but I'm lazy annd this lets me use
+// You could write all routes by hand but I'm lazy and this lets me use
 // the map method to just loop over them and make my routes
 // SWITCH is used so that it only ever matches one route at a time
 // If you don't want to use react router just rewrite the app component to not use it
@@ -48,6 +48,7 @@ const routes = [
 ]
 
 export default function App () {
+  const [visibility, setVisibility] = useState(false);
   const [artistsData, setArtistsData] = useState([]);
 
 
@@ -68,8 +69,9 @@ export default function App () {
   
   return (
     <Router>
-      <nav>
-       <h1 className='website-title'>StArt</h1>
+       
+      <nav className='app-nav'>
+      <h1 className='website-title' onClick={() => setVisibility(!visibility)}>StArt</h1>
         {routes.map(route => 
         {  
           if(route.key !== 'Artists' && route.key !== 'Media Detail'){
