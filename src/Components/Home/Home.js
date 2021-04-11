@@ -38,20 +38,20 @@ export default function Home (props){
                 {/* The random generator variables being called with the json files I created for them */}
                 {artistOfDay[randomIdx] !== undefined && 
              
-                    <div>
+                    <div className='home-art-flex-container'>
 
-                        <div className='home-art-flex-container'>
+                        <div className='one'>
                         <h2 className='artist-of-day'>~ Artist of the Day ~</h2>
 
-                        <h4 className='artist-of-day'>
+                        <h4 className='one'>
                             {artistOfDay[randomIdx].nameDate}
                         </h4>
 
-                        <h5 className='artist-of-day'>
+                        <h5 className='one'>
                             {artistOfDay[randomIdx].typeofArt}
                         </h5>
 
-                        <h5 className='artist-of-day'>
+                        <h5 className='one'>
                             {artistOfDay[randomIdx].artwork}
                         </h5>
                         </div>
@@ -59,14 +59,14 @@ export default function Home (props){
                     </div>  
                         }
 
-                    <div className='home-funfact-flex-container'>
+                    <div className='home-art-flex-container'>
                        <h2 className='art-fun-prompt'>~ Fun Fact ~</h2>
 
                        <h3 className='art-fun-prompt'> {funFacts[randomFactIdx] !== undefined && funFacts[randomFactIdx].fact}</h3>
 
                     </div>
 
-                    <div className='home-artprompt-flex-container'>
+                    <div className='home-art-flex-container'>
                         <h2 className='art-fun-prompt'>~ Prompt of the Day ~</h2>
 
                         <h3 className='art-fun-prompt'>{artPrompts[randomPromptIdx] !== undefined && artPrompts[randomPromptIdx].prompt}</h3>

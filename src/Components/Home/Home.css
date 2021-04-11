@@ -25,22 +25,32 @@
 
 .home-art-flex-container{
     display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
+    flex-wrap: wrap;
+    flex-direction: column;
     background-color: red;
+}
+
+.home-art-flex-container > .one{
+    background-color: yellow;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    font-size: medium;
 }
 
 .home-funfact-flex-container{
     display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
+    flex-wrap: wrap;
+    flex-direction: column;
     background: blue;
 }
 
+
+
 .home-artprompt-flex-container{
     display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
+    flex-wrap: wrap;
+    flex-direction: column;
     background-color: pink;
 }
 
