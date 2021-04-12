@@ -25,76 +25,21 @@
 
 .home-art-flex-container{
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    flex-wrap: row wrap;
     background-color: red;
 }
 
 .home-art-flex-container > .one{
+    flex-direction:column-reverse;
     background-color: yellow;
-    width: 100px;
+    width: 300px;
     margin: 10px;
     text-align: center;
     font-size: medium;
-}
-
-.home-funfact-flex-container{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    background: blue;
-}
-
-
-
-.home-artprompt-flex-container{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    background-color: pink;
-}
-
-/* .home-art-flex-container > .artist-of-day{
-    background-color: yellow;
-    width: 100px;
-    margin: 10px;
-    text-align: center;
-    line-height: 75px;
-    font-size: medium; */
-    /* display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    color: #898092;
-    font-family: 'Franklin Gothic Medium', cursive;
-    font-weight: bolder; */
-
-/* } */
-/* .artist-of-day,
-.artist-of-day-type,
-.artist-of-day-artwork{
-    display: flex;
-    justify-content: center;
     color: #898092;
     font-family: 'Franklin Gothic Medium', cursive;
 }
 
-.fun-facts{
-    display: flex;
-    justify-content: center;
-    color: #898092;
-    font-family: 'Franklin Gothic Medium', cursive;
-}
-
-.art-prompt{
-    display: flex;
-    justify-content: center;
-    color: #898092;
-    font-family: 'Franklin Gothic Medium', cursive;
-} */
-
-/* .border-wrap-home{
-    border: 2px  solid #DCCEFF ;
-} */
 
 
 @media only screen and (min-width: 768px) {

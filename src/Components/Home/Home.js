@@ -41,7 +41,7 @@ export default function Home (props){
                     <div className='home-art-flex-container'>
 
                         <div className='one'>
-                        <h2 className='artist-of-day'>~ Artist of the Day ~</h2>
+                        <h2 className='one'>~ Artist of the Day ~</h2>
 
                         <h4 className='one'>
                             {artistOfDay[randomIdx].nameDate}
@@ -60,16 +60,21 @@ export default function Home (props){
                         }
 
                     <div className='home-art-flex-container'>
-                       <h2 className='art-fun-prompt'>~ Fun Fact ~</h2>
+                        <div className='one'>
+                       <h2 className='one'>~ Fun Fact ~</h2>
 
-                       <h3 className='art-fun-prompt'> {funFacts[randomFactIdx] !== undefined && funFacts[randomFactIdx].fact}</h3>
+                       <h3 className='one'> {funFacts[randomFactIdx] !== undefined && funFacts[randomFactIdx].fact}</h3>
 
+                       </div>
                     </div>
 
                     <div className='home-art-flex-container'>
-                        <h2 className='art-fun-prompt'>~ Prompt of the Day ~</h2>
+                        <div className='one'>
+                        <h2 className='one'>~ Prompt of the Day ~</h2>
 
-                        <h3 className='art-fun-prompt'>{artPrompts[randomPromptIdx] !== undefined && artPrompts[randomPromptIdx].prompt}</h3>
+                        <h3 className='one'>{artPrompts[randomPromptIdx] !== undefined && artPrompts[randomPromptIdx].prompt}</h3>
+
+                        </div>
 
                     </div>
 

@@ -12,7 +12,7 @@ export default function ArtistsLists (props) {
                 <h3 className='artist-list-display'>
                 {props.data.map((artist, i) => {
                     return (
-                        <Link m to={`/artists/${artist.id}`}> {artist.title}</Link>
+                        <Link key={i} to={`/artists/${artist.id}`}> {artist.title}</Link>
                         
                     )
                 })}

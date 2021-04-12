@@ -25,7 +25,6 @@ export default function Artists(props) {
                 <div>
                         <h2 className='artist-data-title'>{artistInfo.data.title}</h2>
                         <h3 className='artist-data-title'>{artistInfo.data.birth_date} - {artistInfo.data.death_date}</h3>
-                        {/* <h3>{artistInfo.data.artwork_ids}</h3> */}
                         <p className='artist-data-description'dangerouslySetInnerHTML={{ __html: artistInfo.data.description }}></p>
                     
                 </div>
