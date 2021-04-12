@@ -25,6 +25,14 @@
 
 }
 
+.super-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+
+}
+
 .home-art-flex-container{
     display: flex;
     flex-wrap: wrap;

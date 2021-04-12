@@ -36,8 +36,10 @@ export default function Home (props){
                  <li className='list-start'> 3. Do an art prompt!</li>
 
                 {/* The random generator variables being called with the json files I created for them */}
+                <div className='super-container'>
                 {artistOfDay[randomIdx] !== undefined && 
              
+            
                     <div className='home-art-flex-container'>
 
                         <div className='one'>
@@ -76,6 +78,7 @@ export default function Home (props){
 
                         </div>
 
+                    </div>
                     </div>
 
             </div>
