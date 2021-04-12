@@ -25,6 +25,40 @@ h1{
    
 }
 
+.heading-detail{
+  display:flex;
+  justify-content: center;
+  color: #898092;
+  font-family: 'Franklin Gothic Medium', cursive;
+}
+
+.article-title{
+  display:flex;
+  justify-content: center;
+  color: #898092;
+  font-family: 'Franklin Gothic Medium', cursive;
+  font-size: x-large;
+}
+
+.article-date {
+  display:flex;
+  justify-content: center;
+  color: #898092;
+  font-family: 'Franklin Gothic Medium';
+  font-size:large;
+}
+
+.article-piece{
+  display:flex;
+  justify-content:flex-start;
+  color: #898092;
+  font-family: 'Franklin Gothic Medium';
+  font-size: large;
+  padding: 10px;
+  margin: 30px 30px;
+}
+
+
 
 @media only screen and (min-width: 768px) {
     aside {

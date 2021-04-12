@@ -11,6 +11,8 @@
     color: #898092;
     font-family: 'Franklin Gothic Medium', cursive;
     font-size: x-large;
+    padding: 10px;
+    margin: 30px 30px;
   
 }
 
@@ -25,13 +27,15 @@
 
 .home-art-flex-container{
     display: flex;
-    flex-wrap: row wrap;
-    background-color: red;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: #DCCEFF;
+
 }
 
 .home-art-flex-container > .one{
-    flex-direction:column-reverse;
-    background-color: yellow;
+    /* flex: 1 1 160px; */
+    background-color: #F8FCDF;
     width: 300px;
     margin: 10px;
     text-align: center;

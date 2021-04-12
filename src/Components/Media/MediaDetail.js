@@ -21,13 +21,13 @@ export default function Media (props) {
     return(
         <div>
 
-            <h1>~ Article Details ~</h1>
+            <h1 className='heading-detail'>~ Article Details ~</h1>
            
             {mediaInfo.data &&
                 <div>
-                    <h2>{mediaInfo.data.title}</h2>
-                    <h3>{mediaInfo.data.date}</h3>
-                    <p dangerouslySetInnerHTML={{ __html:mediaInfo.data.copy }}></p>
+                    <h2 className='article-title'>{mediaInfo.data.title}</h2>
+                    <h3 className='article-date'>{mediaInfo.data.date}</h3>
+                    <p className='article-piece' dangerouslySetInnerHTML={{ __html:mediaInfo.data.copy }}></p>
                 </div>
             }
         </div>

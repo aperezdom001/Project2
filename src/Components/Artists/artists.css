@@ -34,10 +34,13 @@
 }
   .artist-data-description{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     color: #898092;
     font-family: 'Franklin Gothic Medium';
     font-weight:lighter;
+    padding: 10px;
+    margin: 8px;
 
   }
   
