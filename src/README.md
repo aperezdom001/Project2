@@ -1,17 +1,36 @@
-Description: 
+1. Description: 
 
-Describe at a high level what your project is and the motivation for the project (i.e., what problem(s) your projects solves) and includes a screenshot of the application in the browser.
+ For this project 2, I created an interactive application called StArt (shortened for Start Art). My home page includes a greeting and the purpose of this application: 
 
-For this project 2, I created an interactive application called StArt (shortened for Start Art). My application allows the user to look at a list of artists and learn more information about them in terms of their type of work, their inspirations, and a little bit about their life. If the user wants to learn about more, there is a another navigation called "Media" that displays a list of articles with links about different subjects related to art and history. 
+    -  Explore the history of art, learn more about artists, and observe new art techniques and concepts.
+    -  Improve your creative side and learn how you can use that to your advantage in your daily life.
 
- Technologies Used: A list of the languages, libraries and frameworks used in your application.
+ In the home page, there are three boxes with the artist of the day, a fun fact, and an art prompt that is randomly generated when you click the link to "Home" or the "StArt" name on the right side of the navigation. I included these as a fun way for the user to interact with three different aspects if they wish to learn more or to create something different if the current prompt that is shown is not desired.
 
- The JS library, React was used to create this application and CSS FlexBox was used to design and organize the layout. 
+ My application allows the user to go to "Artists List" to look at a list of artists and learn more information about them in terms of their type of work, their inspirations, and a little bit about their life. If the user wants to learn more about art/art history, there is a another navigation called "Media" that displays a list of articles with links about different subjects related to art and history. When creating this website, I had these objectives in mind:
 
- Getting Started/Installation Instructions: This would likely describe how to use the application and the steps to fork, clone and run the application.
+    -	As a user, I want to see a list of all the artists and articles as links so I can read them in a unique way
+    -	As a user, I want to learn some fun facts and have some kind of prompt that helps me exercise my creative side for the day
+    -	As a user, I want to be able to look at the page/components in an organized and artistic way that gets their attention
+
+
+ 2. Technologies Used: 
+
+ React was used to create this application and CSS FlexBox was used to design and organize the layout. 
+
+
+ 3.Getting Started/Installation Instructions: 
 
  You can look at this application in your mobile, tablet, or your computer. This app was designed so that the user can interact with it no matter what screen they are on. 
 
- There are three links in the navigation: "Home", "Artists", and "Media". The user can click to any of these links to take them to a different part of the application without loading the whole application everytime thanks to React and the properties of a Single-Page-Application. In the Home page, there is an introduction
+ There are three links in the navigation: "Home", "Artists", and "Media". The user can click to any of these links to take them to a different part of the application without loading the whole application everytime thanks to React and the properties of a Single-Page-Application. 
 
- Contribution Guidelines: This section should offer guidance on where and how users can contribute to your code, identify bugs, and propose improvements.
+
+ 4. Contribution Guidelines: This section should offer guidance on where and how users can contribute to your code, identify bugs, and propose improvements.
+
+    Some improvements I can make for this application is:
+
+    -   Style my artists' bio and the article pieces. There are some parts here that make it diffcult to see on your smaller screens such as the navigation. 
+    -   I would like to add some images about the artists in their bio pages just so there is not just words on a screen. 
+    -   One bug is when you click the "StArt" the page refeshes but is does not do much. I need to find where this is happening and get rid of it and instead create a       button where you can get different responses from the three boxes in the homepage everytime you click on it.
+    -   I can keep adding to my artistOfDay.json, artPrompts.json, and my funFacts.json!
