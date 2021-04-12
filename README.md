@@ -35,7 +35,7 @@
     -   Style my artists' bio and the article pieces. There are some parts here that make it diffcult to see on your smaller screens such as the navigation. 
     -   I would like to add some images about the artists in their bio pages just so there is not just words on a screen. 
     -   One bug is when you click the "StArt" the page refeshes but is does not do much. I need to find where this is happening and get rid of it and instead create a  button where you can get different responses from the three boxes in the homepage everytime you click on it.
-    -   I can keep adding to my artistOfDay.json, artPrompts.json, and my funFacts.json!
+    -   I can keep adding to my artistOfDay.json, artPrompts.json, and my funFacts.json or find new API for this.
 
 5. Credits/API Used:
 
