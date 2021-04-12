@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+1. Description: 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ For this project 2, I created an interactive application called StArt (shortened for Start Art). My home page includes a greeting and the purpose of this application: 
 
-## Available Scripts
+    -  Explore the history of art, learn more about artists, and observe new art techniques and concepts.
+    -  Improve your creative side and learn how you can use that to your advantage in your daily life.
 
-In the project directory, you can run:
+ In the home page, there are three boxes with the artist of the day, a fun fact, and an art prompt that is randomly generated when you click the link to "Home" or the "StArt" name on the right side of the navigation. I included these as a fun way for the user to interact with three different aspects if they wish to learn more or to create something different if the current prompt that is shown is not desired.
 
-### `yarn start`
+ My application allows the user to go to "Artists List" to look at a list of artists and learn more information about them in terms of their type of work, their inspirations, and a little bit about their life. If the user wants to learn more about art/art history, there is a another navigation called "Media" that displays a list of articles with links about different subjects related to art and history. When creating this website, I had these objectives in mind:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+    -	As a user, I want to see a list of all the artists and articles as links so I can read them in a unique way
+    -	As a user, I want to learn some fun facts and have some kind of prompt that helps me exercise my creative side for the day
+    -	As a user, I want to be able to look at the page/components in an organized and artistic way that gets their attention
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `yarn test`
+ 2. Technologies Used: 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ React was used to create this application and CSS FlexBox was used to design and organize the layout. 
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+ 3.Getting Started/Installation Instructions: 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+ You can look at this application in your mobile, tablet, or your computer. This app was designed so that the user can interact with it no matter what screen they are on. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+ There are three links in the navigation: "Home", "Artists", and "Media". The user can click to any of these links to take them to a different part of the application without loading the whole application everytime thanks to React and the properties of a Single-Page-Application. 
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+ 4. Contribution Guidelines: This section should offer guidance on where and how users can contribute to your code, identify bugs, and propose improvements.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    Some improvements I can make for this application is:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    -   Style my artists' bio and the article pieces. There are some parts here that make it diffcult to see on your smaller screens such as the navigation. 
+    -   I would like to add some images about the artists in their bio pages just so there is not just words on a screen. 
+    -   One bug is when you click the "StArt" the page refeshes but is does not do much. I need to find where this is happening and get rid of it and instead create a       button where you can get different responses from the three boxes in the homepage everytime you click on it.
+    -   I can keep adding to my artistOfDay.json, artPrompts.json, and my funFacts.json!
