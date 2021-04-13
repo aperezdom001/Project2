@@ -17,7 +17,7 @@ export default function Artists(props) {
     useEffect( () => {
         getArtistInfo();
     }, []); 
-    console.log(artistInfo);
+   
     return(
         <div>
              <h1 className='more-info'>More Information:</h1>

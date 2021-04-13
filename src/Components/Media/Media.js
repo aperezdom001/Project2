@@ -19,8 +19,6 @@ export default function Media (props) {
         getMediaInfo();
     }, []);
 
-    console.log(mediaInfo);
-
     return(
         <div>
             <h1 className='media-title'>~ StArt Media ~</h1>
@@ -31,7 +29,7 @@ export default function Media (props) {
                         
                     )
                 })}
-                </h2>
+            </h2>
         </div>
     )
 }

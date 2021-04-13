@@ -29,7 +29,7 @@ export default function Home (props){
 
                  <p className='greeting-intro'>
                      To start the day with some art: 
-                 </p>
+                </p>
 
                  <li className='list-start'> 1. Discover a new artist</li>
                  <li className='list-start'> 2. Learn some fun facts</li>
@@ -79,7 +79,7 @@ export default function Home (props){
                         </div>
 
                     </div>
-                    </div>
+                </div>
 
             </div>
            
